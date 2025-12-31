@@ -552,7 +552,7 @@ function App() {
   const aFrameCottageData = {
     name: "Mowgli Camp Packages",
     location: "Kodaikanal Wilderness",
-    image: "/aframe-cottage-1.jpg",
+    image: "aframe-cottage-1.jpg",
     description: "Choose your ideal adventure package. From luxury A-Frame cottages with thrilling jeep trekking to cozy camping tents, we offer experiences tailored to your group size and thirst for adventure.",
     amenities: [
       { icon: "🚙", name: "Jeep Trekking (Min 6 Pax)" },
@@ -567,39 +567,39 @@ function App() {
       {
         name: "Adventure A-Frame Package",
         description: "The ultimate adventure experience. Includes thrilling Jeep Trekking , Hiking, Campfire, and 2 meals. Cottage accommodates 4 guests.",
-        image: "/aframe-painted.jpg",
+        image: "aframe-painted.jpg",
         capacity: 4,
         beds: "Group Accommodation",
         size: "Spacious",
         price: "1500 per head",
         features: ["Jeep Trekking (Min 6 Pax)", "2 Meals", "Hiking", "Campfire", "Max 4 Guests"],
         subImages: [
-          "/aframe-detail-2.jpg",
-          "/aframe-detail-3.jpg",
-          "/aframe-detail-5.jpg",
-          "/aframe-interior-1.jpg",
-          "/aframe-interior-2.jpg",
-          "/aframe-exterior-1.jpg",
-          "/aframe-night-1.jpg"
+          "aframe-detail-2.jpg",
+          "aframe-detail-3.jpg",
+          "aframe-detail-5.jpg",
+          "aframe-interior-1.jpg",
+          "aframe-interior-2.jpg",
+          "aframe-exterior-1.jpg",
+          "aframe-night-1.jpg"
         ]
       },
       {
         name: "Serenity A-Frame Package",
         description: "Relax in our beautiful A-Frame cottages. Includes Hiking, Campfire, and 2 meals. (Jeep Trekking NOT included).",
-        image: "/aframe-cottage-2.jpg",
+        image: "aframe-cottage-2.jpg",
         capacity: 4,
         beds: "Comfortable Beds",
         size: "Standard",
         price: "1200 per head",
         features: ["2 Meals", "Hiking", "Campfire", "Nature Views"],
         subImages: [
-          "/aframe-detail-2.jpg",
-          "/aframe-detail-3.jpg",
-          "/aframe-detail-5.jpg",
-          "/aframe-interior-1.jpg",
-          "/aframe-interior-2.jpg",
-          "/aframe-exterior-1.jpg",
-          "/aframe-night-1.jpg"
+          "aframe-detail-2.jpg",
+          "aframe-detail-3.jpg",
+          "aframe-detail-5.jpg",
+          "aframe-interior-1.jpg",
+          "aframe-interior-2.jpg",
+          "aframe-exterior-1.jpg",
+          "aframe-night-1.jpg"
         ]
       }
     ]
@@ -608,7 +608,7 @@ function App() {
   const tentData = {
     name: "Wilderness Tent Stay",
     location: "Kodaikanal Wilderness",
-    image: "/tent-glow.jpg",
+    image: "tent-glow.jpg",
     description: "Experience the true essence of camping under the stars. deep inside the forest safely. Perfect for thrill-seekers and nature lovers.",
     amenities: [
       { icon: "🚙", name: "Jeep Trekking (Min 6 Pax)" },
@@ -623,18 +623,18 @@ function App() {
       {
         name: "Wilderness Tent Package",
         description: "True outdoor camping experience. Available for groups of 2, 4, or 6. Includes Hiking, Campfire, and 2 meals. (Jeep Trekking Not Included).",
-        image: "/tent-forest.jpg",
+        image: "tent-forest.jpg",
         capacity: 6,
         beds: "Floor Bedding",
         size: "Varied Sizes",
         price: "800 per head",
         features: ["Jeep Trekking (Min 6 Pax)", "For 2/4/6 Pax", "2 Meals", "Hiking", "Campfire"],
         subImages: [
-          "/tent-detail-1.jpg",
-          "/tent-detail-2.jpg",
-          "/tent-detail-3.jpg",
-          "/tent-detail-4.jpg",
-          "/tent-detail-5.jpg"
+          "tent-detail-1.jpg",
+          "tent-detail-2.jpg",
+          "tent-detail-3.jpg",
+          "tent-detail-4.jpg",
+          "tent-detail-5.jpg"
         ]
       }
     ]
@@ -643,7 +643,7 @@ function App() {
   const forestDomeData = {
     name: "Forest Dome",
     location: "Dinosaur Park - Kodaikanal Forest",
-    image: "/dome-header.jpg",
+    image: "dome-header.jpg",
     description: "Unique dome-shaped accommodation with breathtaking mountain views. Family-friendly themed resort with playful charm and premium comfort.",
     amenities: [
       { icon: "🦖", name: "Dinosaur Theme" },
@@ -659,18 +659,18 @@ function App() {
       {
         name: "Forest Dome Package",
         description: "Unique dome-shaped accommodation with breathtaking mountain views. Includes Jeep Trekking, Hiking, Campfire, and 2 meals. Perfect for couples.",
-        image: "/dome-view.jpg",
+        image: "dome-view.jpg",
         capacity: 2,
         beds: "Comfortable Double Bed",
         size: "Cozy",
         price: "6000 for 2 people",
         features: ["Jeep Trekking (Min 6 Pax)", "2 Meals", "Hiking", "Campfire", "Mountain Views", "No Internet", "2 Domes Available"],
         subImages: [
-          "/dome-view.jpg",
-          "/dino-detail-4.jpg",
-          "/dino-dome-night.jpg",
-          "/dino-detail-3.jpg",
-          "/dino-detail-1.jpg"
+          "dome-view.jpg",
+          "dino-detail-4.jpg",
+          "dino-dome-night.jpg",
+          "dino-detail-3.jpg",
+          "dino-detail-1.jpg"
         ]
       }
     ]
@@ -679,7 +679,7 @@ function App() {
   const cozyHutData = {
     name: "Cozy Hut",
     location: "Dinosaur Park - Kodaikanal Forest",
-    image: "/cozy-hut.jpg",
+    image: "cozy-hut.jpg",
     description: "Traditional forest hut with modern amenities. Family-friendly themed resort perfect for small families seeking comfort in nature.",
     amenities: [
       { icon: "🦖", name: "Dinosaur Theme" },
@@ -695,18 +695,18 @@ function App() {
       {
         name: "Cozy Hut Package",
         description: "Traditional forest hut with modern amenities. Includes Hiking, Campfire, and 2 meals. Ideal for small families. Minimum 4 people.",
-        image: "/cozy-hut.jpg",
+        image: "cozy-hut.jpg",
         capacity: 4,
         beds: "Double Beds",
         size: "Standard",
         price: "1800 per head (Min 4 Pax)",
         features: ["Min 4 Pax", "2 Meals", "Hiking", "Campfire", "Nature Views", "2 Huts Available"],
         subImages: [
-          "/cozy-hut.jpg",
-          "/dino-pool.jpg",
-          "/dino-detail-3.jpg",
-          "/dino-detail-1.jpg",
-          "/dino-detail-2.jpg"
+          "cozy-hut.jpg",
+          "dino-pool.jpg",
+          "dino-detail-3.jpg",
+          "dino-detail-1.jpg",
+          "dino-detail-2.jpg"
         ]
       }
     ]
@@ -715,7 +715,7 @@ function App() {
   const bigAFrameData = {
     name: "Big A-Frame",
     location: "Dinosaur Park - Kodaikanal Forest",
-    image: "/big-aframe.jpg",
+    image: "big-aframe.jpg",
     description: "Spacious A-Frame cottage perfect for larger groups. Premium wilderness experience with adventure activities and family-friendly amenities.",
     amenities: [
       { icon: "🦖", name: "Dinosaur Theme" },
@@ -732,18 +732,18 @@ function App() {
       {
         name: "Big A-Frame Package",
         description: "Spacious A-Frame cottage perfect for larger groups. Includes Jeep Trekking, Hiking, Campfire, and 2 meals. Minimum 6 people.",
-        image: "/big-aframe.jpg",
+        image: "big-aframe.jpg",
         capacity: 6,
         beds: "Multiple Beds",
         size: "Extra Large",
         price: "10000 total (Min 6 Pax)",
         features: ["Jeep Trekking (Min 6 Pax)", "Min 6 Pax", "2 Meals", "Hiking", "Campfire", "Spacious", "Premium"],
         subImages: [
-          "/big-aframe.jpg",
-          "/cozy-hut.jpg",
-          "/dino-pool.jpg",
-          "/dino-detail-5.jpg",
-          "/dino-detail-3.jpg"
+          "big-aframe.jpg",
+          "cozy-hut.jpg",
+          "dino-pool.jpg",
+          "dino-detail-5.jpg",
+          "dino-detail-3.jpg"
         ]
       }
     ]
@@ -752,7 +752,7 @@ function App() {
   const dormitoryHutData = {
     name: "Dormitory Hut",
     location: "Dinosaur Park - Kodaikanal Forest",
-    image: "/dormitory-hut.jpg",
+    image: "dormitory-hut.jpg",
     description: "Shared accommodation perfect for large groups and budget travelers. Experience community living in the forest with all amenities.",
     amenities: [
       { icon: "🦖", name: "Dinosaur Theme" },
@@ -768,19 +768,19 @@ function App() {
       {
         name: "Dormitory Hut Package",
         description: "Shared accommodation perfect for large groups. Includes Hiking, Campfire, and 2 meals. Experience community living in the forest.",
-        image: "/dormitory-hut.jpg",
+        image: "dormitory-hut.jpg",
         capacity: 10,
         beds: "Bunk Beds",
         size: "Large",
         price: "Contact for pricing",
         features: ["2 Meals", "Hiking", "Campfire", "Group Accommodation", "Budget Friendly", "Up to 10 Guests"],
         subImages: [
-          "/dormitory-hut.jpg",
-          "/dino-pool.jpg",
-          "/dino-dome-night.jpg",
-          "/dino-detail-1.jpg",
-          "/dino-detail-2.jpg",
-          "/dino-detail-3.jpg"
+          "dormitory-hut.jpg",
+          "dino-pool.jpg",
+          "dino-dome-night.jpg",
+          "dino-detail-1.jpg",
+          "dino-detail-2.jpg",
+          "dino-detail-3.jpg"
         ]
       }
     ]
@@ -1176,10 +1176,10 @@ function App() {
         }}>
           <CircularGallery
             items={[
-              { image: '/gallery-1.jpg', text: 'Waterfall Adventure' },
-              { image: '/gallery-2.jpg', text: 'Friends & Views' },
-              { image: '/gallery-3.jpg', text: 'Mountain Picnic' },
-              { image: '/gallery-4.jpg', text: 'Sunset Clouds' }
+              { image: 'gallery-1.jpg', text: 'Waterfall Adventure' },
+              { image: 'gallery-2.jpg', text: 'Friends & Views' },
+              { image: 'gallery-3.jpg', text: 'Mountain Picnic' },
+              { image: 'gallery-4.jpg', text: 'Sunset Clouds' }
             ]}
             bend={2.5}
             textColor="#ffffff"
