@@ -1,0 +1,571 @@
+/* Property Details Overlay */
+.property-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Start from bottom for mobile feeling */
+}
+
+/* Container */
+.property-details-container {
+    background: white;
+    width: 100%;
+    max-width: 1250px;
+    height: 98vh;
+    /* Takes up 90% of screen height */
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Close Button */
+.close-details-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.close-details-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Header Section */
+.property-details-header {
+    position: relative;
+}
+
+.property-details-hero {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.property-details-title-section {
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.property-details-title-section h1 {
+    margin: 0 0 10px 0;
+    color: #1a4d2e;
+    font-size: 2.2rem;
+}
+
+.property-location {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.property-description {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Amenities Section */
+.property-amenities-section {
+    padding: 30px;
+    background: #f9fbf9;
+}
+
+.property-amenities-section h2 {
+    color: #1a4d2e;
+    margin-bottom: 20px;
+}
+
+.amenities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.amenity-item {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.amenity-icon {
+    font-size: 1.4rem;
+}
+
+/* Rooms Section */
+.rooms-section {
+    padding: 30px;
+}
+
+.rooms-section h2 {
+    color: #1a4d2e;
+    margin-bottom: 25px;
+}
+
+.rooms-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.room-card {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* Mobile first, updated via media query */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    /* Critical fix for flex child overflow */
+}
+
+.room-info h3 {
+    color: #1a4d2e;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.room-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.room-features {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.room-features span {
+    background: #f0f4f0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.room-price-section {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .room-price-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .room-price {
+        justify-content: center;
+    }
+
+    .book-room-btn {
+        width: 100%;
+    }
+}
+
+.room-price {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.price-amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a4d2e;
+}
+
+.price-period {
+    color: #888;
+}
+
+.book-room-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+
+/* Booking Modal */
+.booking-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.booking-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.booking-modal h2 {
+    color: #1a4d2e;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.booking-summary {
+    background: #f9fbf9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+
+.submit-booking-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+/* Gallery Navigation */
+.room-gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Ensure it fills container */
+    max-width: 100%;
+    /* Prevent overflow */
+}
+
+.room-gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 5px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    flex: 1;
+}
+
+.room-gallery::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.room-gallery-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.room-gallery-img:hover {
+    transform: scale(1.1);
+    border-color: #52b788;
+}
+
+.gallery-nav-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(26, 77, 46, 0.1);
+    border: none;
+    color: #1a4d2e;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    padding-bottom: 4px;
+}
+
+.gallery-nav-btn:hover {
+    background: #1a4d2e;
+    color: white;
+    transform: scale(1.1);
+}
+
+.gallery-nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* Lightbox Overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.lightbox-close-btn:hover {
+    background: white;
+    color: black;
+    transform: rotate(90deg);
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+/* Lightbox Navigation */
+.lightbox-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10002;
+    padding-bottom: 6px;
+    backdrop-filter: blur(4px);
+}
+
+.lightbox-nav-btn:hover {
+    background: white;
+    color: black;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav-btn.prev {
+    left: 40px;
+}
+
+.lightbox-nav-btn.next {
+    right: 40px;
+}
+
+.lightbox-book-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 30px;
+    background: #1a4d2e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 10002;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-book-btn:hover {
+    background: #2d8a52;
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .property-details-container {
+        height: 85vh;
+        border-radius: 20px;
+        align-self: center;
+        /* Center on desktop */
+    }
+
+    .room-card {
+        flex-direction: row;
+    }
+
+    .room-image {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .lightbox-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-nav-btn.prev {
+        left: 10px;
+    }
+
+    .lightbox-nav-btn.next {
+        right: 10px;
+    }
+}

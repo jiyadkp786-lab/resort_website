@@ -1,0 +1,228 @@
+/* Flying Parrot Animation */
+.flying-bird-container {
+    position: absolute;
+    left: -150px;
+    animation: flyAcross 25s linear infinite;
+    z-index: 3;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.parrot-svg {
+    display: block;
+}
+
+/* Dramatic Wing Flapping Animation - 8 frames like reference */
+.wing {
+    transform-origin: 40px 45px;
+    animation: flapWings 0.4s ease-in-out infinite;
+}
+
+.wing-left {
+    animation-name: flapWingsLeft;
+}
+
+.wing-right {
+    animation-name: flapWingsRight;
+}
+
+/* Left Wing - Full flap cycle */
+@keyframes flapWingsLeft {
+    0% {
+        /* Wings up */
+        transform: rotateY(0deg) rotateZ(-45deg) translateY(-8px);
+    }
+
+    12.5% {
+        /* Mid up */
+        transform: rotateY(-15deg) rotateZ(-35deg) translateY(-5px);
+    }
+
+    25% {
+        /* Level */
+        transform: rotateY(-25deg) rotateZ(-10deg) translateY(0px);
+    }
+
+    37.5% {
+        /* Mid down */
+        transform: rotateY(-30deg) rotateZ(10deg) translateY(3px);
+    }
+
+    50% {
+        /* Wings down */
+        transform: rotateY(-35deg) rotateZ(25deg) translateY(5px);
+    }
+
+    62.5% {
+        /* Mid down return */
+        transform: rotateY(-30deg) rotateZ(10deg) translateY(3px);
+    }
+
+    75% {
+        /* Level return */
+        transform: rotateY(-20deg) rotateZ(-10deg) translateY(0px);
+    }
+
+    87.5% {
+        /* Mid up return */
+        transform: rotateY(-10deg) rotateZ(-30deg) translateY(-5px);
+    }
+
+    100% {
+        /* Wings up */
+        transform: rotateY(0deg) rotateZ(-45deg) translateY(-8px);
+    }
+}
+
+/* Right Wing - Full flap cycle */
+@keyframes flapWingsRight {
+    0% {
+        /* Wings up */
+        transform: rotateY(0deg) rotateZ(45deg) translateY(-8px);
+    }
+
+    12.5% {
+        /* Mid up */
+        transform: rotateY(15deg) rotateZ(35deg) translateY(-5px);
+    }
+
+    25% {
+        /* Level */
+        transform: rotateY(25deg) rotateZ(10deg) translateY(0px);
+    }
+
+    37.5% {
+        /* Mid down */
+        transform: rotateY(30deg) rotateZ(-10deg) translateY(3px);
+    }
+
+    50% {
+        /* Wings down */
+        transform: rotateY(35deg) rotateZ(-25deg) translateY(5px);
+    }
+
+    62.5% {
+        /* Mid down return */
+        transform: rotateY(30deg) rotateZ(-10deg) translateY(3px);
+    }
+
+    75% {
+        /* Level return */
+        transform: rotateY(20deg) rotateZ(10deg) translateY(0px);
+    }
+
+    87.5% {
+        /* Mid up return */
+        transform: rotateY(10deg) rotateZ(30deg) translateY(-5px);
+    }
+
+    100% {
+        /* Wings up */
+        transform: rotateY(0deg) rotateZ(45deg) translateY(-8px);
+    }
+}
+
+/* Flying Across Screen with Wave Motion */
+@keyframes flyAcross {
+    0% {
+        left: -150px;
+        transform: translateY(0px);
+    }
+
+    15% {
+        transform: translateY(-25px);
+    }
+
+    35% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    65% {
+        transform: translateY(-10px);
+    }
+
+    85% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        left: calc(100% + 150px);
+        transform: translateY(0px);
+    }
+}
+
+/* Body bobbing with wing flaps */
+.parrot-body {
+    animation: bodyBob 0.4s ease-in-out infinite;
+}
+
+@keyframes bodyBob {
+
+    0%,
+    100% {
+        transform: translateY(0px) scaleY(1);
+    }
+
+    25% {
+        transform: translateY(-1px) scaleY(1.02);
+    }
+
+    50% {
+        transform: translateY(-2px) scaleY(1.05);
+    }
+
+    75% {
+        transform: translateY(-1px) scaleY(1.02);
+    }
+}
+
+/* Tail movement */
+.parrot-tail {
+    transform-origin: 25px 50px;
+    animation: tailSwing 0.8s ease-in-out infinite;
+}
+
+@keyframes tailSwing {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+
+/* Feet subtle movement */
+.parrot-feet {
+    animation: feetMove 0.4s ease-in-out infinite;
+}
+
+@keyframes feetMove {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .flying-bird-container {
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 480px) {
+    .flying-bird-container {
+        transform: scale(0.5);
+    }
+}
