@@ -86,7 +86,7 @@ const JungleBook = () => {
         {/* PAGE 2: Accommodations Image */}
         <div className="book-page paper">
           <div className="book-image-container">
-            <img src="/book-welcome.jpg" alt="Mountain Village Landscape" />
+            <img src="book-welcome.jpg" alt="Mountain Village Landscape" />
             <p className="image-caption">Journey of Kodai - Where Mountains Meet Sky</p>
           </div>
           <div className="page-number">2</div>
@@ -132,7 +132,7 @@ const JungleBook = () => {
             }}>
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/property-aframe.jpg"
+                  src="property-aframe.jpg"
                   alt="A-Frame Cottage"
                   style={{
                     width: '100%',
@@ -154,7 +154,7 @@ const JungleBook = () => {
               </div>
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/property-domes.jpg"
+                  src="property-domes.jpg"
                   alt="Forest Domes"
                   style={{
                     width: '100%',
@@ -222,7 +222,7 @@ const JungleBook = () => {
                 height: '180px'
               }}>
                 <img
-                  src="/exp-waterfall.jpg"
+                  src="exp-waterfall.jpg"
                   alt="Waterfall Visit"
                   style={{
                     width: '100%',
@@ -246,7 +246,7 @@ const JungleBook = () => {
               {/* Camping */}
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/exp-camping.jpg"
+                  src="exp-camping.jpg"
                   alt="Camping"
                   style={{
                     width: '100%',
@@ -270,7 +270,7 @@ const JungleBook = () => {
               {/* Trekking */}
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/exp-trekking.jpg"
+                  src="exp-trekking.jpg"
                   alt="Trekking"
                   style={{
                     width: '100%',
@@ -294,7 +294,7 @@ const JungleBook = () => {
               {/* Pool Activities */}
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/exp-pool.jpg"
+                  src="exp-pool.jpg"
                   alt="Pool Activities"
                   style={{
                     width: '100%',
@@ -318,7 +318,7 @@ const JungleBook = () => {
               {/* Night Dome */}
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '8px' }}>
                 <img
-                  src="/exp-dome-night.jpg"
+                  src="exp-dome-night.jpg"
                   alt="Dome at Night"
                   style={{
                     width: '100%',
@@ -368,7 +368,7 @@ const JungleBook = () => {
                 boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
               }}>
                 <img
-                  src="/adventure-jeep.jpg"
+                  src="adventure-jeep.jpg"
                   alt="4x4 Jeep Trekking"
                   style={{
                     width: '100%',
@@ -423,7 +423,7 @@ const JungleBook = () => {
                 boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
               }}>
                 <img
-                  src="/adventure-waterfall.jpg"
+                  src="adventure-waterfall.jpg"
                   alt="Waterfall Exploration"
                   style={{
                     width: '100%',
@@ -505,7 +505,7 @@ const JungleBook = () => {
         {/* PAGE 9: Forest Walk Image */}
         <div className="book-page paper">
           <div className="book-image-container">
-            <img src="/forest-walk.png" alt="Forest Walk" />
+            <img src="forest-walk.png" alt="Forest Walk" />
             <p className="image-caption">Guided forest trails await</p>
           </div>
           <div className="page-number">9</div>
@@ -853,7 +853,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="/hero-rocks.jpg"
+          src="hero-rocks.jpg"
           alt="Misty rock formations in forest"
           className="hero-background"
           style={{ transform: `translateY(${parallaxOffset}px)` }}
@@ -862,8 +862,8 @@ function App() {
 
         {/* Animated Clouds */}
         <div className="hero-clouds">
-          <img src="/cloud1.png" alt="" className="cloud cloud-1" />
-          <img src="/cloud2.png" alt="" className="cloud cloud-2" />
+          <img src="cloud1.png" alt="" className="cloud cloud-1" />
+          <img src="cloud2.png" alt="" className="cloud cloud-2" />
         </div>
 
         <div className="hero-content">
@@ -918,19 +918,19 @@ function App() {
             <div className="about-image">
               <div className="about-image-grid">
                 <div className="about-grid-item about-grid-tall">
-                  <img src="/kodai-9.jpg" alt="Golden Hour Fog" />
+                  <img src="kodai-9.jpg" alt="Golden Hour Fog" />
                 </div>
                 <div className="about-grid-item">
-                  <img src="/kodai-4.jpg" alt="Forest Retreat" />
+                  <img src="kodai-4.jpg" alt="Forest Retreat" />
                 </div>
                 <div className="about-grid-item">
-                  <img src="/kodai-8.jpg" alt="Resort Gazebo" />
+                  <img src="kodai-8.jpg" alt="Resort Gazebo" />
                 </div>
                 <div className="about-grid-item">
-                  <img src="/kodai-10.jpg" alt="Sunset Clouds" />
+                  <img src="kodai-10.jpg" alt="Sunset Clouds" />
                 </div>
                 <div className="about-grid-item">
-                  <img src="/kodai-7.jpg" alt="Misty Rocks" />
+                  <img src="kodai-7.jpg" alt="Misty Rocks" />
                 </div>
               </div>
             </div>
