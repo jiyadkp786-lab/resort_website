@@ -993,7 +993,7 @@ function App() {
             <div className="accommodation-grid">
               <div className="accommodation-card animate-on-scroll" style={{ cursor: 'pointer' }}>
                 <div className="accommodation-image">
-                  <img src="/aframe-painted.jpg" alt="A-Frame Cottage" />
+                  <img src="aframe-painted.jpg" alt="A-Frame Cottage" />
                 </div>
                 <div className="accommodation-info">
                   <h4>A-Frame Cottage</h4>
@@ -1009,7 +1009,7 @@ function App() {
               </div>
               <div className="accommodation-card animate-on-scroll">
                 <div className="accommodation-image">
-                  <img src="/tent-glow.jpg" alt="Wilderness Tent" />
+                  <img src="tent-glow.jpg" alt="Wilderness Tent" />
                 </div>
                 <div className="accommodation-info">
                   <h4>Wilderness Tent</h4>
@@ -1036,7 +1036,7 @@ function App() {
             <div className="accommodation-grid">
               <div className="accommodation-card">
                 <div className="accommodation-image">
-                  <img src="/dome-view.jpg" alt="Dome" />
+                  <img src="dome-view.jpg" alt="Dome" />
                 </div>
                 <div className="accommodation-info">
                   <h4>Forest Dome</h4>
@@ -1052,7 +1052,7 @@ function App() {
               </div>
               <div className="accommodation-card">
                 <div className="accommodation-image">
-                  <img src="/cozy-hut.jpg" alt="Hut" />
+                  <img src="cozy-hut.jpg" alt="Hut" />
                 </div>
                 <div className="accommodation-info">
                   <h4>Cozy Hut</h4>
@@ -1068,7 +1068,7 @@ function App() {
               </div>
               <div className="accommodation-card">
                 <div className="accommodation-image">
-                  <img src="/big-aframe.jpg" alt="Big A-Frame" />
+                  <img src="big-aframe.jpg" alt="Big A-Frame" />
                 </div>
                 <div className="accommodation-info">
                   <h4>Big A-Frame</h4>
@@ -1084,7 +1084,7 @@ function App() {
               </div>
               <div className="accommodation-card">
                 <div className="accommodation-image">
-                  <img src="/dormitory-hut.jpg" alt="Dormitory Hut" />
+                  <img src="dormitory-hut.jpg" alt="Dormitory Hut" />
                 </div>
                 <div className="accommodation-info">
                   <h4>Dormitory Hut</h4>
